@@ -98,62 +98,8 @@
       Latest
     </h2>
 
-    <!--
-      ═══════════════════════════════════════════════════════════════
-      HOW TO UPDATE TIKTOK VIDEOS
-      ═══════════════════════════════════════════════════════════════
-      1. Open any @londonforless TikTok video in a browser
-      2. Copy the full URL (e.g. https://www.tiktok.com/@londonforless/video/7123456789012345678)
-      3. Replace the cite="..." URL and data-video-id="..." below with the new values
-         The video ID is the long number at the end of the URL
-      4. To add more videos, duplicate one <div class="tiktok-slot">…</div> block
-      ═══════════════════════════════════════════════════════════════
-    -->
-    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;" class="fade-up">
-
-      <!-- VIDEO SLOT 1 -->
-      <div class="tiktok-slot" style="flex:1;min-width:300px;max-width:360px;">
-        <blockquote class="tiktok-embed"
-          cite="https://www.tiktok.com/@londonforless/video/7620946334819831062"
-          data-video-id="7620946334819831062"
-          style="border:none;margin:0;padding:0;background:rgba(13,34,51,0.6);border-radius:8px;min-height:560px;">
-          <section>
-            <a href="https://www.tiktok.com/@londonforless/video/7620946334819831062" target="_blank" rel="noopener">
-              @londonforless
-            </a>
-          </section>
-        </blockquote>
-      </div>
-
-      <!-- VIDEO SLOT 2 — replace VIDEO_ID_2 with your second video's ID -->
-      <div class="tiktok-slot" style="flex:1;min-width:300px;max-width:360px;">
-        <blockquote class="tiktok-embed"
-          cite="https://www.tiktok.com/@londonforless/video/VIDEO_ID_2"
-          data-video-id="VIDEO_ID_2"
-          style="border:none;margin:0;padding:0;background:rgba(13,34,51,0.6);border-radius:8px;min-height:560px;">
-          <section>
-            <a href="https://www.tiktok.com/@londonforless" target="_blank" rel="noopener">
-              @londonforless
-            </a>
-          </section>
-        </blockquote>
-      </div>
-
-      <!-- VIDEO SLOT 3 — replace VIDEO_ID_3 with your third video's ID -->
-      <div class="tiktok-slot" style="flex:1;min-width:300px;max-width:360px;">
-        <blockquote class="tiktok-embed"
-          cite="https://www.tiktok.com/@londonforless/video/VIDEO_ID_3"
-          data-video-id="VIDEO_ID_3"
-          style="border:none;margin:0;padding:0;background:rgba(13,34,51,0.6);border-radius:8px;min-height:560px;">
-          <section>
-            <a href="https://www.tiktok.com/@londonforless" target="_blank" rel="noopener">
-              @londonforless
-            </a>
-          </section>
-        </blockquote>
-      </div>
-
-    </div>
+    <!-- Videos loaded automatically from videos.json -->
+    <div id="tiktok-feed" style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;" class="fade-up"></div>
 
     <div style="text-align:center;margin-top:var(--space-md);display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;" class="fade-up">
       <a href="https://www.tiktok.com/@londonforless" target="_blank" rel="noopener"
@@ -174,8 +120,43 @@
     </div>
   </div>
 </section>
-<!-- TikTok embed script — renders all blockquotes above -->
-<script async src="https://www.tiktok.com/embed.js"></script>
+<script>
+(async function () {
+  try {
+    const res = await fetch('/videos.json');
+    const videos = await res.json();
+    const feed = document.getElementById('tiktok-feed');
+
+    videos.slice(0, 3).forEach(function (v) {
+      const slot = document.createElement('div');
+      slot.className = 'tiktok-slot';
+      slot.style.cssText = 'flex:1;min-width:300px;max-width:360px;';
+      slot.innerHTML =
+        '<blockquote class="tiktok-embed"' +
+        ' cite="https://www.tiktok.com/@londonforless/video/' + v.id + '"' +
+        ' data-video-id="' + v.id + '"' +
+        ' style="border:none;margin:0;padding:0;background:rgba(13,34,51,0.6);border-radius:8px;min-height:560px;">' +
+        '<section><a href="https://www.tiktok.com/@londonforless/video/' + v.id + '" target="_blank" rel="noopener">@londonforless</a></section>' +
+        '</blockquote>';
+      if (v.description) {
+        const desc = document.createElement('p');
+        desc.style.cssText = 'font-size:0.82rem;color:var(--blue-light);margin-top:0.75rem;line-height:1.5;opacity:0.8;padding:0 0.25rem;';
+        desc.textContent = v.description;
+        slot.appendChild(desc);
+      }
+      feed.appendChild(slot);
+    });
+
+    // Load TikTok embed script after injecting blockquotes
+    const s = document.createElement('script');
+    s.src = 'https://www.tiktok.com/embed.js';
+    s.async = true;
+    document.body.appendChild(s);
+  } catch (e) {
+    console.error('Failed to load videos:', e);
+  }
+})();
+</script>
 
 
 </main>
