@@ -1464,6 +1464,9 @@ ul, ol { list-style: none; }
   /* Hero layout — reduce gap, allow logo to shrink */
   .hero-content > div[style*="display:flex"] { gap: 1.5rem; }
   .hero-content img { width: clamp(160px, 35vw, 300px) !important; }
+
+  /* Centred page hero — hide the decorative line before eyebrow */
+  [style*="text-align:center"] .page-hero-eyebrow::before { display: none; }
 }
 
 @media (max-width: 480px) {
