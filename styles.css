@@ -878,8 +878,8 @@ ul, ol { list-style: none; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
+  width: min(600px, 150vw);
+  height: min(600px, 150vw);
   background: radial-gradient(circle, rgba(75,163,195,0.06) 0%, transparent 70%);
   pointer-events: none;
 }
@@ -1457,12 +1457,32 @@ ul, ol { list-style: none; }
 
   .scroll-strip-wrap::before,
   .scroll-strip-wrap::after { width: 1.5rem; }
+
+  /* TikTok slots — stack to single column on tablet/mobile */
+  .tiktok-slot { min-width: min(300px, 100%) !important; max-width: 100% !important; flex: 1 1 100% !important; }
+
+  /* Hero layout — reduce gap, allow logo to shrink */
+  .hero-content > div[style*="display:flex"] { gap: 1.5rem; }
+  .hero-content img { width: clamp(160px, 35vw, 300px) !important; }
 }
 
 @media (max-width: 480px) {
-  .hero-content { padding: var(--space-md); }
+  .hero-content { padding: var(--space-sm) var(--space-sm); }
   .filter-bar { top: var(--nav-height); padding: 0.75rem var(--space-sm); }
   .deal-card-visual { height: 160px; }
+
+  /* Hero stats — stack cleanly on small screens */
+  .hero-stats-row { flex-direction: column; gap: 1rem; }
+  .hero-stat-divider { display: none; }
+
+  /* Social tiles — single column on very small screens */
+  .social-teaser { grid-template-columns: 1fr 1fr; }
+
+  /* Prevent any max-width from eating all padding */
+  p[style*="max-width"] { max-width: 100% !important; }
+
+  /* TikTok slots — stack to single column */
+  .tiktok-slot { min-width: 100% !important; max-width: 100% !important; flex: none !important; }
 }
 
 /* ─── Animated entrance ─── */
