@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deals & Discounts — London For Less</title>
+  <meta name="description" content="London's best deals, discounts and savings — hand-picked and verified by London For Less. 10M+ monthly views." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="London For Less home">
+      <svg class="nav-logo-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#0D2233" stroke="#4BA3C3" stroke-width="2"/>
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#4BA3C3" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <rect x="4" y="28" width="92" height="32" fill="#4BA3C3" opacity="0.18" rx="0"/>
+        <rect x="14" y="42" width="8" height="20" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="15" y="36" width="6" height="7" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="16" y="32" width="4" height="5" fill="none" stroke="white" stroke-width="1"/>
+        <line x1="18" y1="32" x2="18" y2="28" stroke="white" stroke-width="1.2"/>
+        <line x1="13" y1="42" x2="23" y2="42" stroke="white" stroke-width="1"/>
+        <rect x="35" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="59" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
+        <line x1="35" y1="55" x2="65" y2="55" stroke="white" stroke-width="1.5"/>
+        <line x1="38" y1="50" x2="38" y2="44" stroke="white" stroke-width="1"/>
+        <line x1="62" y1="50" x2="62" y2="44" stroke="white" stroke-width="1"/>
+        <line x1="38" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
+        <line x1="62" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
+        <circle cx="83" cy="52" r="9" fill="none" stroke="white" stroke-width="1.2"/>
+        <line x1="83" y1="43" x2="83" y2="61" stroke="white" stroke-width="0.7"/>
+        <line x1="74" y1="52" x2="92" y2="52" stroke="white" stroke-width="0.7"/>
+        <line x1="83" y1="61" x2="83" y2="65" stroke="white" stroke-width="1.2"/>
+        <line x1="4" y1="62" x2="96" y2="62" stroke="white" stroke-width="1" opacity="0.4"/>
+        <text x="50" y="74" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="9" fill="white" letter-spacing="2">LONDON</text>
+        <text x="50" y="82" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="7" fill="#C9A84C" letter-spacing="3">FOR LESS</text>
+        <text x="22" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
+        <text x="73" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
+      </svg>
+      <div class="nav-logo-text">
+        London For Less
+        <span>Est. London · Since 2019</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="deals.html" class="active">Deals</a></li>
+      <li><a href="freebies.html">Freebies</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="deals.html" class="nav-cta">Get Deals →</a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile-overlay" role="dialog" aria-modal="true">
+  <a href="index.html">Home</a>
+  <a href="deals.html">Deals</a>
+  <a href="freebies.html">Freebies</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="deals.html" class="nav-mobile-cta">Get Deals →</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════ -->
+<header class="page-hero" role="banner">
+  <!-- Tower Bridge watermark -->
+  <svg class="page-hero-landmark" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="60" y="120" width="60" height="180" fill="white"/>
+    <rect x="280" y="120" width="60" height="180" fill="white"/>
+    <rect x="40" y="180" width="320" height="25" fill="white"/>
+    <line x1="90" y1="120" x2="200" y2="70" stroke="white" stroke-width="4"/>
+    <line x1="310" y1="120" x2="200" y2="70" stroke="white" stroke-width="4"/>
+    <rect x="152" y="70" width="96" height="32" fill="white" opacity="0.8"/>
+    <line x1="90" y1="120" x2="50" y2="180" stroke="white" stroke-width="2" stroke-dasharray="8,8" opacity="0.6"/>
+    <line x1="310" y1="120" x2="350" y2="180" stroke="white" stroke-width="2" stroke-dasharray="8,8" opacity="0.6"/>
+    <rect x="70" y="132" width="22" height="28" fill="#4BA3C3" opacity="0.5"/>
+    <rect x="106" y="132" width="22" height="28" fill="#4BA3C3" opacity="0.5"/>
+    <rect x="272" y="132" width="22" height="28" fill="#4BA3C3" opacity="0.5"/>
+    <rect x="308" y="132" width="22" height="28" fill="#4BA3C3" opacity="0.5"/>
+  </svg>
+
+  <div class="container">
+    <div class="page-hero-eyebrow">This Week's Round-Up</div>
+    <h1 class="page-hero-title">This Week's<br/>Best Deals</h1>
+    <p class="page-hero-sub">Every deal hand-checked before it goes up. If it's here, it's proper. Updated Monday, Wednesday and Friday.</p>
+    <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <span class="badge badge-bbc">★ As Seen On BBC</span>
+      <span style="font-size:0.72rem;color:var(--blue-light);opacity:0.6;align-self:center;letter-spacing:0.05em;">Last updated: Mon 24 Mar 2025</span>
+    </div>
+  </div>
+</header>
+
+<!-- Marquee -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-inner">
+    <span>SAVE £30+ THIS WEEK <em>·</em> FOOD DEALS <em>·</em> FREE EVENTS <em>·</em> POP-UPS <em>·</em> DRINKS OFFERS <em>·</em> ENTERTAINMENT <em>·</em> SHOPPING DISCOUNTS <em>·</em></span>
+    <span>SAVE £30+ THIS WEEK <em>·</em> FOOD DEALS <em>·</em> FREE EVENTS <em>·</em> POP-UPS <em>·</em> DRINKS OFFERS <em>·</em> ENTERTAINMENT <em>·</em> SHOPPING DISCOUNTS <em>·</em></span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     FILTER BAR
+════════════════════════════════════════ -->
+<div class="filter-bar" role="tablist" aria-label="Filter deals by category">
+  <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Deals</button>
+  <button class="filter-btn" data-filter="free" role="tab" aria-selected="false">Free</button>
+  <button class="filter-btn" data-filter="food" role="tab" aria-selected="false">Food</button>
+  <button class="filter-btn" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+  <button class="filter-btn" data-filter="entertainment" role="tab" aria-selected="false">Entertainment</button>
+  <button class="filter-btn" data-filter="popup" role="tab" aria-selected="false">Pop-Ups</button>
+  <button class="filter-btn" data-filter="discount" role="tab" aria-selected="false">Shopping</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     DEALS GRID
+════════════════════════════════════════ -->
+<main class="section" id="main-content">
+  <div class="container">
+    <div class="card-grid stagger" id="deals-grid">
+
+      <!-- FOOD DEALS -->
+      <article class="deal-card" data-category="food">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0606,#2a1010);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="150" cy="90" r="60" fill="none" stroke="white" stroke-width="1.5" opacity="0.15"/>
+            <text x="150" y="82" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="22" fill="white" opacity="0.12" letter-spacing="3">DINNER</text>
+            <text x="150" y="105" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="14" fill="#ff8a6b" opacity="0.2" letter-spacing="2">FOR TWO</text>
+            <line x1="120" y1="50" x2="120" y2="130" stroke="white" stroke-width="2" opacity="0.15"/>
+            <line x1="180" y1="50" x2="180" y2="130" stroke="white" stroke-width="2" opacity="0.15"/>
+            <ellipse cx="150" cy="90" rx="22" ry="16" fill="none" stroke="white" stroke-width="0.8" opacity="0.1"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-food">Food</span>
+            <span class="badge badge-discount">50% Off</span>
+          </div>
+          <h2 class="deal-card-title">Dinner for Two — Covent Garden</h2>
+          <p class="deal-card-desc">Three-course dinner for two at one of the most sought-after tables in the West End. Pre-theatre pricing makes it a proper steal — book before 6pm.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £42</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="food">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0c06,#2a1808);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="52" fill="white" opacity="0.08" letter-spacing="2">BRUNCH</text>
+            <rect x="80" y="60" width="140" height="80" rx="4" fill="none" stroke="white" stroke-width="1" opacity="0.12"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-food">Food</span>
+          </div>
+          <h2 class="deal-card-title">Bottomless Brunch — East London</h2>
+          <p class="deal-card-desc">90 minutes of unlimited prosecco, Aperol spritz or Bloody Marys plus a full brunch menu. Shoreditch's most-Instagrammed brunch. Sorted.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £28</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Grab Deal</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DRINKS -->
+      <article class="deal-card" data-category="drinks">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#06101a,#0a1e2e);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="130,40 150,140 170,40" fill="none" stroke="white" stroke-width="1.2" opacity="0.2"/>
+            <polygon points="110,40 150,140 190,40" fill="none" stroke="white" stroke-width="0.7" opacity="0.1"/>
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="26" fill="#6baff5" opacity="0.15" letter-spacing="3">COCKTAILS</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-drinks">Drinks</span>
+          </div>
+          <h2 class="deal-card-title">Rooftop Bar — 2-for-1 Cocktails</h2>
+          <p class="deal-card-desc">360° views of the City skyline and two cocktails for the price of one. Valid Tuesday–Thursday before 8pm. Use code LFL24 at the bar.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £14</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="drinks">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0d1a0a,#142209);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="120" y="40" width="60" height="100" rx="6" fill="none" stroke="white" stroke-width="1.5" opacity="0.2"/>
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="24" fill="white" opacity="0.1" letter-spacing="3">WINE</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-drinks">Drinks</span>
+            <span class="badge badge-discount">40% Off</span>
+          </div>
+          <h2 class="deal-card-title">Wine Tasting — Borough Market</h2>
+          <p class="deal-card-desc">Sample 8 wines from independent European vineyards with expert guided tasting notes. Saturday sessions only. London's most underrated night out.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £18</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- FREE -->
+      <article class="deal-card" data-category="free">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#061a14,#0a2820);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="150" y="105" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="70" fill="#5bd98a" opacity="0.08" letter-spacing="0">FREE</text>
+            <rect x="60" y="55" width="180" height="80" rx="2" fill="none" stroke="white" stroke-width="1" opacity="0.12"/>
+            <line x1="60" y1="75" x2="240" y2="75" stroke="white" stroke-width="0.5" opacity="0.08"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-free">Free</span>
+          </div>
+          <h2 class="deal-card-title">V&A Museum — Permanent Collection</h2>
+          <p class="deal-card-desc">270 galleries. 5,000 years of art, design and performance. Always free, always world-class. The best free gallery in London, and that's saying something.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">FREE Entry</span>
+            <a href="freebies.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="free">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#060d1a,#0a1428);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- National Gallery pillars -->
+            <rect x="40" y="80" width="220" height="70" fill="white" opacity="0.1"/>
+            <polygon points="40,80 150,30 260,80" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+            <rect x="60" y="50" width="8" height="31" fill="white" opacity="0.15"/>
+            <rect x="80" y="50" width="8" height="31" fill="white" opacity="0.15"/>
+            <rect x="140" y="50" width="8" height="31" fill="white" opacity="0.15"/>
+            <rect x="210" y="50" width="8" height="31" fill="white" opacity="0.15"/>
+            <rect x="230" y="50" width="8" height="31" fill="white" opacity="0.15"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-free">Free</span>
+            <span class="badge badge-popup">Culture</span>
+          </div>
+          <h2 class="deal-card-title">National Gallery — Trafalgar Square</h2>
+          <p class="deal-card-desc">Leonardo. Van Gogh. Caravaggio. All of them, free. Turn up any day from 10am, no ticket, no booking, no excuses. This one's a London staple.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">FREE Entry</span>
+            <a href="freebies.html" class="btn btn-primary">Plan Your Visit</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ENTERTAINMENT -->
+      <article class="deal-card" data-category="entertainment">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0606,#280e0e);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Theatre curtains -->
+            <polygon points="40,20 100,20 100,160 40,120" fill="white" opacity="0.08"/>
+            <polygon points="260,20 200,20 200,160 260,120" fill="white" opacity="0.08"/>
+            <ellipse cx="150" cy="90" rx="45" ry="35" fill="none" stroke="white" stroke-width="1" opacity="0.15"/>
+            <text x="150" y="97" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="20" fill="white" opacity="0.15" letter-spacing="2">WEST END</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-entertainment">Entertainment</span>
+            <span class="badge badge-discount">35% Off</span>
+          </div>
+          <h2 class="deal-card-title">West End Theatre — Half Price Seats</h2>
+          <p class="deal-card-desc">Same-day tickets to top West End shows at TKTS Leicester Square. Musicals, drama, comedy — up to 50% off face value. Best seats in the house, sorted.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £35+</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get Tickets</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="entertainment">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#060a1a,#0c1228);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="150" cy="90" r="50" fill="none" stroke="white" stroke-width="1" opacity="0.15"/>
+            <text x="150" y="96" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="18" fill="#6baff5" opacity="0.2" letter-spacing="2">CINEMA</text>
+            <rect x="90" y="110" width="120" height="40" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-entertainment">Entertainment</span>
+          </div>
+          <h2 class="deal-card-title">Open-Air Cinema — Rooftop Peckham</h2>
+          <p class="deal-card-desc">Films under the stars with panoramic London views, blankets provided, prosecco available. Friday and Saturday nights through August. Insanely good.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">From £12</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Book Seats</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- POP-UPS -->
+      <article class="deal-card" data-category="popup">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a061a,#120e28);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="80,60 150,20 220,60 220,140 80,140" fill="none" stroke="white" stroke-width="1.2" opacity="0.18"/>
+            <text x="150" y="95" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#b088f5" opacity="0.2" letter-spacing="3">POP-UP</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-popup">Pop-Up</span>
+            <span class="badge badge-free">Free Entry</span>
+          </div>
+          <h2 class="deal-card-title">Japanese Pop-Up Market — Kings Cross</h2>
+          <p class="deal-card-desc">Two-day immersive market with Japanese food, fashion, ceramics and art. Free entry, everything from £5. One of the most underrated weekends in London this month.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Free Entry</span>
+            <a href="freebies.html" class="btn btn-primary">Find Out More</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SHOPPING -->
+      <article class="deal-card" data-category="discount">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a1406,#14200a);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="100" y="60" width="100" height="80" rx="4" fill="none" stroke="white" stroke-width="1.2" opacity="0.18"/>
+            <path d="M120 60 Q120 40 150 40 Q180 40 180 60" fill="none" stroke="white" stroke-width="1.2" opacity="0.18"/>
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="22" fill="white" opacity="0.1" letter-spacing="2">SALE</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-discount">Shopping</span>
+            <span class="badge badge-discount">Up to 70% Off</span>
+          </div>
+          <h2 class="deal-card-title">Designer Sample Sale — Mayfair</h2>
+          <p class="deal-card-desc">Luxury brands from 30–70% below RRP. Invitation only, but we've got the code. Think Acne, Paul Smith, Mulberry. One day only — first come, first served.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Up to 70% Off</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get Access</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="discount">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0a06,#281408);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="58" fill="#f5a86b" opacity="0.08" letter-spacing="0">£</text>
+            <circle cx="150" cy="90" r="55" fill="none" stroke="white" stroke-width="0.8" opacity="0.1"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-discount">Shopping</span>
+          </div>
+          <h2 class="deal-card-title">Carnaby Street — Student & NHS Discount</h2>
+          <p class="deal-card-desc">Over 40 Carnaby Street shops are offering 15–25% off to students and NHS workers this month. Just show your card. No code, no faff — proper respect.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">15-25% Off</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">See Shops</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" data-category="food">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#10060a,#1e0a14);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="40" fill="white" opacity="0.08" letter-spacing="2">PIZZA</text>
+            <circle cx="150" cy="90" r="50" fill="none" stroke="white" stroke-width="1" opacity="0.12"/>
+            <line x1="150" y1="40" x2="150" y2="140" stroke="white" stroke-width="0.5" opacity="0.08"/>
+            <line x1="100" y1="65" x2="200" y2="115" stroke="white" stroke-width="0.5" opacity="0.08"/>
+            <line x1="200" y1="65" x2="100" y2="115" stroke="white" stroke-width="0.5" opacity="0.08"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-food">Food</span>
+            <span class="badge badge-discount">BOGOF</span>
+          </div>
+          <h2 class="deal-card-title">Neapolitan Pizza — Buy One Get One Free</h2>
+          <p class="deal-card-desc">Proper wood-fired Neapolitan pizza in a buzzing Islington spot. BOGOF on all main pizzas, Monday to Wednesday. Bring a mate, save a tenner. Simple.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Save £13</span>
+            <a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Grab Deal</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Newsletter nudge -->
+    <div class="rule rule-gold fade-up" style="margin-top:var(--space-lg);"></div>
+    <div class="fade-up" style="text-align:center;padding:var(--space-md) 0;">
+      <p class="t-label" style="color:var(--gold);margin-bottom:0.5rem;">Get These Deals First</p>
+      <h3 class="t-editorial" style="font-size:1.5rem;color:var(--white);margin-bottom:1rem;">New deals drop every week. Never miss one.</h3>
+      <form class="newsletter-form" novalidate style="max-width:420px;margin:0 auto;">
+        <input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email address" required />
+        <button class="newsletter-submit" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <svg class="footer-skyline" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="0" y="35" width="1440" height="25" fill="white" opacity="0.05"/>
+    <rect x="50" y="20" width="15" height="40" fill="white"/>
+    <line x1="57" y1="20" x2="57" y2="10" stroke="white" stroke-width="2"/>
+    <rect x="100" y="28" width="30" height="32" fill="white"/>
+    <rect x="140" y="22" width="22" height="38" fill="white"/>
+    <rect x="240" y="18" width="12" height="42" fill="white"/>
+    <rect x="280" y="30" width="55" height="30" fill="white"/>
+    <line x1="280" y1="40" x2="335" y2="40" stroke="white" stroke-width="3"/>
+    <line x1="295" y1="30" x2="307" y2="22" stroke="white" stroke-width="1.5"/>
+    <line x1="320" y1="30" x2="307" y2="22" stroke="white" stroke-width="1.5"/>
+    <circle cx="420" cy="30" r="22" fill="none" stroke="white" stroke-width="1.8"/>
+    <line x1="420" y1="8" x2="420" y2="52" stroke="white" stroke-width="0.8"/>
+    <line x1="398" y1="30" x2="442" y2="30" stroke="white" stroke-width="0.8"/>
+    <line x1="420" y1="52" x2="420" y2="60" stroke="white" stroke-width="2.5"/>
+    <rect x="500" y="15" width="18" height="45" fill="white"/>
+    <polygon points="497,15 509,2 521,15" fill="white"/>
+    <rect x="560" y="25" width="22" height="35" fill="white"/>
+    <rect x="590" y="18" width="18" height="42" fill="white"/>
+    <rect x="650" y="30" width="16" height="30" fill="white"/>
+    <rect x="680" y="22" width="20" height="38" fill="white"/>
+    <rect x="760" y="12" width="14" height="48" fill="white"/>
+    <polygon points="757,12 767,0 777,12" fill="white"/>
+    <rect x="820" y="28" width="18" height="32" fill="white"/>
+    <rect x="860" y="18" width="22" height="42" fill="white"/>
+    <rect x="940" y="24" width="16" height="36" fill="white"/>
+    <rect x="980" y="15" width="20" height="45" fill="white"/>
+    <rect x="1060" y="28" width="30" height="32" fill="white"/>
+    <rect x="1100" y="18" width="16" height="42" fill="white"/>
+    <circle cx="1200" cy="32" r="20" fill="none" stroke="white" stroke-width="1.5"/>
+    <line x1="1200" y1="12" x2="1200" y2="52" stroke="white" stroke-width="0.7"/>
+    <line x1="1180" y1="32" x2="1220" y2="32" stroke="white" stroke-width="0.7"/>
+    <line x1="1200" y1="52" x2="1200" y2="60" stroke="white" stroke-width="2.5"/>
+    <rect x="1280" y="22" width="18" height="38" fill="white"/>
+    <rect x="1320" y="30" width="22" height="30" fill="white"/>
+    <rect x="1380" y="16" width="16" height="44" fill="white"/>
+  </svg>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">London For Less</div>
+          <div class="footer-tagline">Luxe London. Minus the Price Tag.</div>
+          <p class="footer-desc">London's #1 source for free events, pop-ups, food deals and luxury experiences at low cost.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/londonforless" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@londonforless" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.91a8.16 8.16 0 004.77 1.52V7.0a4.85 4.85 0 01-1-.31z"/></svg>
+            </a>
+            <a href="https://facebook.com/share/1DeWoeQyPM" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deals.html">Deals & Discounts</a></li>
+            <li><a href="freebies.html">Freebies & Pop-Ups</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Categories</div>
+          <ul class="footer-links">
+            <li><a href="freebies.html">Free Events</a></li>
+            <li><a href="deals.html">Food Deals</a></li>
+            <li><a href="freebies.html">Pop-Ups</a></li>
+            <li><a href="deals.html">Drinks</a></li>
+            <li><a href="deals.html">Entertainment</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Get In Touch</div>
+          <div class="footer-contact-item">
+            <span class="t-label" style="font-size:0.6rem;color:var(--blue-light);opacity:0.5;">Email</span>
+            <a href="mailto:Londonforless@hotmail.com">Londonforless@hotmail.com</a>
+          </div>
+          <div style="margin-top:1rem;">
+            <span class="badge badge-bbc">★ As Seen On BBC</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 London For Less. All rights reserved.</p>
+        <p class="footer-copy">Londonforless@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="main.js"></script>
+</body>
+</html>

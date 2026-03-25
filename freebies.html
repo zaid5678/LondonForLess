@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freebies & Pop-Ups — London For Less</title>
+  <meta name="description" content="London's best kept free secrets. Free museums, events, food, and pop-ups — all curated by London For Less." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="London For Less home">
+      <svg class="nav-logo-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#0D2233" stroke="#4BA3C3" stroke-width="2"/>
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#4BA3C3" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <rect x="4" y="28" width="92" height="32" fill="#4BA3C3" opacity="0.18"/>
+        <rect x="14" y="42" width="8" height="20" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="15" y="36" width="6" height="7" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="16" y="32" width="4" height="5" fill="none" stroke="white" stroke-width="1"/>
+        <line x1="18" y1="32" x2="18" y2="28" stroke="white" stroke-width="1.2"/>
+        <line x1="13" y1="42" x2="23" y2="42" stroke="white" stroke-width="1"/>
+        <rect x="35" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
+        <rect x="59" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
+        <line x1="35" y1="55" x2="65" y2="55" stroke="white" stroke-width="1.5"/>
+        <line x1="38" y1="50" x2="38" y2="44" stroke="white" stroke-width="1"/>
+        <line x1="62" y1="50" x2="62" y2="44" stroke="white" stroke-width="1"/>
+        <line x1="38" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
+        <line x1="62" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
+        <circle cx="83" cy="52" r="9" fill="none" stroke="white" stroke-width="1.2"/>
+        <line x1="83" y1="43" x2="83" y2="61" stroke="white" stroke-width="0.7"/>
+        <line x1="74" y1="52" x2="92" y2="52" stroke="white" stroke-width="0.7"/>
+        <line x1="83" y1="61" x2="83" y2="65" stroke="white" stroke-width="1.2"/>
+        <line x1="4" y1="62" x2="96" y2="62" stroke="white" stroke-width="1" opacity="0.4"/>
+        <text x="50" y="74" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="9" fill="white" letter-spacing="2">LONDON</text>
+        <text x="50" y="82" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="7" fill="#C9A84C" letter-spacing="3">FOR LESS</text>
+        <text x="22" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
+        <text x="73" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
+      </svg>
+      <div class="nav-logo-text">London For Less<span>Est. London · Since 2019</span></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="deals.html">Deals</a></li>
+      <li><a href="freebies.html" class="active">Freebies</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="deals.html" class="nav-cta">Get Deals →</a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile-overlay" role="dialog" aria-modal="true">
+  <a href="index.html">Home</a><a href="deals.html">Deals</a><a href="freebies.html">Freebies</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  <a href="deals.html" class="nav-mobile-cta">Get Deals →</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════ -->
+<header class="page-hero" role="banner" style="min-height:55vh;display:flex;align-items:flex-end;padding-bottom:var(--space-lg);">
+  <!-- London Eye watermark -->
+  <svg class="page-hero-landmark" viewBox="0 0 280 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="140" cy="160" r="130" fill="none" stroke="white" stroke-width="3"/>
+    <line x1="140" y1="30" x2="140" y2="290" stroke="white" stroke-width="1.5"/>
+    <line x1="10" y1="160" x2="270" y2="160" stroke="white" stroke-width="1.5"/>
+    <line x1="48" y1="68" x2="232" y2="252" stroke="white" stroke-width="1.2"/>
+    <line x1="232" y1="68" x2="48" y2="252" stroke="white" stroke-width="1.2"/>
+    <line x1="17" y1="110" x2="263" y2="210" stroke="white" stroke-width="1"/>
+    <line x1="263" y1="110" x2="17" y2="210" stroke="white" stroke-width="1"/>
+    <!-- Pods -->
+    <ellipse cx="140" cy="30" rx="10" ry="7" fill="white" opacity="0.5"/>
+    <ellipse cx="140" cy="290" rx="10" ry="7" fill="white" opacity="0.5"/>
+    <ellipse cx="10" cy="160" rx="7" ry="10" fill="white" opacity="0.5"/>
+    <ellipse cx="270" cy="160" rx="7" ry="10" fill="white" opacity="0.5"/>
+    <ellipse cx="48" cy="68" rx="9" ry="7" fill="white" opacity="0.4"/>
+    <ellipse cx="232" cy="68" rx="9" ry="7" fill="white" opacity="0.4"/>
+    <ellipse cx="48" cy="252" rx="9" ry="7" fill="white" opacity="0.4"/>
+    <ellipse cx="232" cy="252" rx="9" ry="7" fill="white" opacity="0.4"/>
+    <!-- Support -->
+    <line x1="140" y1="290" x2="140" y2="360" stroke="white" stroke-width="5"/>
+    <line x1="100" y1="360" x2="180" y2="360" stroke="white" stroke-width="3"/>
+  </svg>
+
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="page-hero-eyebrow">No Budget Required</div>
+    <h1 class="page-hero-title">London's Best<br/>Kept Free Secrets</h1>
+    <p class="page-hero-sub">The capital is full of extraordinary things that cost absolutely nothing. You just need to know where to look. We've done the looking for you.</p>
+    <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+      <span class="badge badge-free">Free Museums</span>
+      <span class="badge badge-popup">Pop-Ups</span>
+      <span class="badge badge-food">Free Food</span>
+      <span class="badge badge-entertainment">Free Events</span>
+    </div>
+  </div>
+</header>
+
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-inner">
+    <span>FREE MUSEUMS <em>·</em> FREE EVENTS <em>·</em> FREE FOOD <em>·</em> POP-UPS <em>·</em> FREE GALLERIES <em>·</em> FREE CONCERTS <em>·</em> BECAUSE LONDON SHOULD BE FOR EVERYONE <em>·</em></span>
+    <span>FREE MUSEUMS <em>·</em> FREE EVENTS <em>·</em> FREE FOOD <em>·</em> POP-UPS <em>·</em> FREE GALLERIES <em>·</em> FREE CONCERTS <em>·</em> BECAUSE LONDON SHOULD BE FOR EVERYONE <em>·</em></span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     FREE MUSEUMS
+════════════════════════════════════════ -->
+<main id="main-content">
+  <!-- Category header -->
+  <section style="padding:var(--space-lg) 0 var(--space-md);background:var(--navy-deep);border-bottom:1px solid rgba(75,163,195,0.1);">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+        <span class="badge badge-free" style="font-size:0.7rem;padding:0.4rem 0.9rem;">Free</span>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(91,217,138,0.3),transparent);"></div>
+      </div>
+      <h2 class="t-display fade-up" style="font-size:clamp(2.5rem,6vw,5rem);color:var(--white);">Free Museums</h2>
+      <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;margin-top:0.5rem;font-weight:300;max-width:600px;">World-class collections, always free. These institutions cost nothing to enter and everything not to visit.</p>
+    </div>
+  </section>
+
+  <!-- Alternating editorial blocks -->
+  <div class="freebies-list">
+
+    <!-- Block 1 — British Museum -->
+    <article class="editorial-block fade-up" style="padding:var(--space-lg) 0;margin:0;">
+      <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="editorial-visual" style="background:linear-gradient(135deg,#08131e,#0d2233);">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- British Museum facade -->
+            <rect x="60" y="160" width="280" height="120" fill="white" opacity="0.15"/>
+            <rect x="50" y="152" width="300" height="14" fill="white" opacity="0.25"/>
+            <!-- Columns -->
+            <rect x="70" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="95" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="120" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="145" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="240" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="265" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="290" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <rect x="315" y="90" width="12" height="64" fill="white" opacity="0.35"/>
+            <!-- Pediment -->
+            <polygon points="50,90 200,30 350,90" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
+            <!-- Door -->
+            <rect x="175" y="180" width="50" height="80" rx="2" fill="#4BA3C3" opacity="0.2"/>
+            <!-- Windows -->
+            <rect x="80" y="170" width="20" height="25" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="110" y="170" width="20" height="25" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="270" y="170" width="20" height="25" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="300" y="170" width="20" height="25" fill="#4BA3C3" opacity="0.3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="editorial-category">Free Museums</div>
+          <h3 class="editorial-title">The British Museum</h3>
+          <p class="editorial-body">Eight million objects. Two million years of human history. The Rosetta Stone, Egyptian mummies, the Elgin Marbles — all of it free, all year round. Walk straight in, no ticket, no time limit. One of the genuinely great things about London.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">📍 Great Russell St, WC1B 3DG</span>
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">🕙 Daily 10am–5:30pm</span>
+          </div>
+          <a href="mailto:Londonforless@hotmail.com" class="btn btn-outline">Plan Your Visit →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Block 2 — Tate Modern (reversed) -->
+    <article style="padding:var(--space-lg) 0;border-top:1px solid rgba(75,163,195,0.08);">
+      <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="fade-up">
+          <div class="editorial-category">Free Museums</div>
+          <h3 class="editorial-title">Tate Modern</h3>
+          <p class="editorial-body">The world's most visited modern art museum — Warhol, Dali, Rothko, Basquiat. The permanent collection is free every single day. The building itself (a converted power station on the Thames) is worth the trip alone. Late nights on select Fridays hit different.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">📍 Bankside, SE1 9TG</span>
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">🕙 Sun–Thu 10am–6pm · Fri–Sat 10am–10pm</span>
+          </div>
+          <a href="mailto:Londonforless@hotmail.com" class="btn btn-outline">Plan Your Visit →</a>
+        </div>
+        <div class="editorial-visual fade-up" style="background:linear-gradient(135deg,#0a1420,#081018);">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Power station / Tate Modern -->
+            <rect x="60" y="80" width="280" height="200" fill="white" opacity="0.12"/>
+            <!-- Central chimney -->
+            <rect x="170" y="20" width="60" height="62" fill="white" opacity="0.5"/>
+            <rect x="165" y="15" width="70" height="10" fill="white" opacity="0.4"/>
+            <!-- Windows rows -->
+            <rect x="80" y="100" width="30" height="20" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="120" y="100" width="30" height="20" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="250" y="100" width="30" height="20" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="290" y="100" width="30" height="20" fill="#4BA3C3" opacity="0.3"/>
+            <rect x="80" y="135" width="30" height="20" fill="#4BA3C3" opacity="0.25"/>
+            <rect x="120" y="135" width="30" height="20" fill="#4BA3C3" opacity="0.25"/>
+            <rect x="250" y="135" width="30" height="20" fill="#4BA3C3" opacity="0.25"/>
+            <rect x="290" y="135" width="30" height="20" fill="#4BA3C3" opacity="0.25"/>
+            <rect x="80" y="170" width="30" height="20" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="120" y="170" width="30" height="20" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="250" y="170" width="30" height="20" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="290" y="170" width="30" height="20" fill="#4BA3C3" opacity="0.2"/>
+            <!-- Thames -->
+            <line x1="60" y1="280" x2="340" y2="280" stroke="#4BA3C3" stroke-width="2" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+    </article>
+
+    <!-- Block 3 — V&A -->
+    <article style="padding:var(--space-lg) 0;border-top:1px solid rgba(75,163,195,0.08);">
+      <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="editorial-visual fade-up" style="background:linear-gradient(135deg,#120820,#1a0e2a);">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- V&A ornate facade -->
+            <rect x="50" y="100" width="300" height="180" fill="white" opacity="0.1"/>
+            <rect x="45" y="92" width="310" height="12" fill="white" opacity="0.2"/>
+            <!-- Ornate towers -->
+            <rect x="55" y="50" width="45" height="54" fill="white" opacity="0.25"/>
+            <polygon points="55,50 77,20 100,50" fill="white" opacity="0.3"/>
+            <rect x="300" y="50" width="45" height="54" fill="white" opacity="0.25"/>
+            <polygon points="300,50 322,20 345,50" fill="white" opacity="0.3"/>
+            <!-- Central entrance -->
+            <rect x="165" y="120" width="70" height="160" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+            <path d="M165 120 Q200 85 235 120" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+            <!-- Decorative windows -->
+            <rect x="80" y="115" width="25" height="35" rx="12" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+            <rect x="290" y="115" width="25" height="35" rx="12" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+            <rect x="80" y="165" width="25" height="30" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="120" y="165" width="25" height="30" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="255" y="165" width="25" height="30" fill="#4BA3C3" opacity="0.2"/>
+            <rect x="295" y="165" width="25" height="30" fill="#4BA3C3" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="fade-up">
+          <div class="editorial-category">Free Museums</div>
+          <h3 class="editorial-title">Victoria & Albert Museum</h3>
+          <p class="editorial-body">270 galleries of decorative arts and design spanning 5,000 years. The fashion collection alone is worth the trip. Free permanent collection always, plus blockbuster paid exhibitions. The café and garden courtyard are some of the most beautiful spaces in London.</p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">📍 Cromwell Rd, SW7 2RL</span>
+            <span class="t-label" style="color:var(--blue-light);opacity:0.7;font-size:0.65rem;">🕙 Daily 10am–5:45pm · Fri to 10pm</span>
+          </div>
+          <a href="mailto:Londonforless@hotmail.com" class="btn btn-outline">Plan Your Visit →</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ── FREE EVENTS section divider ── -->
+  <section style="padding:var(--space-lg) 0 var(--space-md);background:var(--navy-deep);border-top:1px solid rgba(75,163,195,0.1);border-bottom:1px solid rgba(75,163,195,0.1);">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+        <span class="badge badge-entertainment" style="font-size:0.7rem;padding:0.4rem 0.9rem;">Events</span>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(245,168,107,0.3),transparent);"></div>
+      </div>
+      <h2 class="t-display fade-up" style="font-size:clamp(2.5rem,6vw,5rem);color:var(--white);">Free Events</h2>
+      <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;margin-top:0.5rem;font-weight:300;max-width:600px;">Concerts, film screenings, markets, and performances — the best free things happening in London right now.</p>
+    </div>
+  </section>
+
+  <!-- Events grid -->
+  <section class="section">
+    <div class="container">
+      <div class="card-grid stagger">
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#070d1a,#0c1828);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="36" fill="white" opacity="0.1" letter-spacing="3">JAZZ</text>
+              <!-- Music notes -->
+              <text x="90" y="85" font-size="28" fill="white" opacity="0.12">♪</text>
+              <text x="165" y="70" font-size="22" fill="white" opacity="0.1">♫</text>
+              <text x="200" y="105" font-size="24" fill="white" opacity="0.1">♪</text>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-free">Free</span><span class="badge badge-entertainment">Live Music</span></div>
+            <h3 class="deal-card-title">Free Jazz at Ronnie Scott's — Sunday Sessions</h3>
+            <p class="deal-card-desc">The legendary Soho jazz club opens its doors free on Sunday afternoons. World-class musicians, no cover charge. One of those London things nobody talks about enough.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Find Out More</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#071a07,#0a2a0a);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Park trees -->
+              <ellipse cx="60" cy="100" rx="30" ry="40" fill="white" opacity="0.1"/>
+              <rect x="57" y="100" width="6" height="50" fill="white" opacity="0.12"/>
+              <ellipse cx="150" cy="88" rx="40" ry="50" fill="white" opacity="0.08"/>
+              <rect x="147" y="88" width="6" height="62" fill="white" opacity="0.1"/>
+              <ellipse cx="250" cy="96" rx="32" ry="42" fill="white" opacity="0.1"/>
+              <rect x="247" y="96" width="6" height="54" fill="white" opacity="0.12"/>
+              <line x1="20" y1="150" x2="280" y2="150" stroke="white" stroke-width="1" opacity="0.12"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-free">Free</span></div>
+            <h3 class="deal-card-title">Summer Concerts — Regent's Park Open Air</h3>
+            <p class="deal-card-desc">Picnic on the grass to live classical, jazz and world music every Thursday evening through summer. Free to attend, just BYO blanket and snacks. Proper London magic.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">View Schedule</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0a0a,#280e0e);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Film reel -->
+              <circle cx="150" cy="90" r="55" fill="none" stroke="white" stroke-width="1.5" opacity="0.15"/>
+              <circle cx="150" cy="90" r="20" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+              <text x="150" y="97" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="16" fill="white" opacity="0.15" letter-spacing="2">FILM</text>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-free">Free</span><span class="badge badge-entertainment">Film</span></div>
+            <h3 class="deal-card-title">Free Film Screenings — BFI Southbank</h3>
+            <p class="deal-card-desc">The BFI runs free outdoor screenings on the Southbank terrace throughout summer. Classic films, cult favourites and new releases. No booking, just show up.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">See Schedule</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#060a14,#0a1220);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="28" fill="white" opacity="0.1" letter-spacing="3">GALLERY</text>
+              <rect x="60" y="50" width="180" height="100" fill="none" stroke="white" stroke-width="1" opacity="0.15"/>
+              <rect x="80" y="65" width="45" height="35" fill="white" opacity="0.08"/>
+              <rect x="140" y="65" width="45" height="35" fill="white" opacity="0.08"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-free">Free</span><span class="badge badge-popup">Pop-Up</span></div>
+            <h3 class="deal-card-title">East End Gallery Walk — Every Saturday</h3>
+            <p class="deal-card-desc">Dozens of independent galleries in Shoreditch open simultaneously every Saturday afternoon. Free, no booking, no pretension — just great contemporary art and good vibes.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get the Map</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FREE FOOD section ── -->
+  <section style="padding:var(--space-lg) 0 var(--space-md);background:var(--navy-deep);border-top:1px solid rgba(75,163,195,0.1);border-bottom:1px solid rgba(75,163,195,0.1);">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+        <span class="badge badge-food" style="font-size:0.7rem;padding:0.4rem 0.9rem;">Food</span>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(255,138,107,0.3),transparent);"></div>
+      </div>
+      <h2 class="t-display fade-up" style="font-size:clamp(2.5rem,6vw,5rem);color:var(--white);">Free Food</h2>
+      <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;margin-top:0.5rem;font-weight:300;max-width:600px;">Yes, free food — and we're not talking about sad packets of crisps. These are proper meals, tastings and treats.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid stagger">
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0606,#280808);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="28" fill="white" opacity="0.1" letter-spacing="2">SAMPLES</text>
+              <circle cx="150" cy="90" r="45" fill="none" stroke="white" stroke-width="1" opacity="0.1"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-food">Free Food</span></div>
+            <h3 class="deal-card-title">Borough Market — Free Tasting Trail</h3>
+            <p class="deal-card-desc">London's most famous food market has over 100 stalls handing out free samples every day. Cheese, bread, charcuterie, honey, pastries — do a full lap and you'll be stuffed.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Find Out More</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#06120a,#0a1e10);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="100" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="26" fill="white" opacity="0.1" letter-spacing="2">HARE KRISHNA</text>
+              <rect x="80" y="60" width="140" height="80" fill="none" stroke="white" stroke-width="0.8" opacity="0.12"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-food">Free Food</span><span class="badge badge-free">Daily</span></div>
+            <h3 class="deal-card-title">Free Vegetarian Meals — Soho Temple</h3>
+            <p class="deal-card-desc">The Hare Krishna temple on Soho Street serves free hot vegetarian meals every day from noon. Proper food, no strings attached, no religion required — just show up.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Find Out More</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── POP-UPS ── -->
+  <section style="padding:var(--space-lg) 0 var(--space-md);background:var(--navy-deep);border-top:1px solid rgba(75,163,195,0.1);">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+        <span class="badge badge-popup" style="font-size:0.7rem;padding:0.4rem 0.9rem;">Pop-Ups</span>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(176,136,245,0.3),transparent);"></div>
+      </div>
+      <h2 class="t-display fade-up" style="font-size:clamp(2.5rem,6vw,5rem);color:var(--white);">Pop-Ups This Month</h2>
+      <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;margin-top:0.5rem;font-weight:300;max-width:600px;">Here today, gone tomorrow. These are the limited-time experiences you don't want to miss.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid stagger">
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a061a,#140a28);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="70" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="20" fill="#b088f5" opacity="0.2" letter-spacing="3">IMMERSIVE</text>
+              <circle cx="150" cy="110" r="40" fill="none" stroke="#b088f5" stroke-width="1" opacity="0.15"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-popup">Pop-Up</span><span class="badge badge-free">Free Entry</span></div>
+            <h3 class="deal-card-title">Immersive Art Installation — Battersea</h3>
+            <p class="deal-card-desc">A free walk-through light and sound installation by a collective of London-based artists. Running for three weeks only. Already sold out on paid nights — we've got the free slots.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Reserve Slot</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#1a0808,#280c0c);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="80" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="18" fill="white" opacity="0.12" letter-spacing="3">VINTAGE MARKET</text>
+              <rect x="50" y="90" width="60" height="60" fill="none" stroke="white" stroke-width="1" opacity="0.18"/>
+              <polygon points="50,90 80,65 110,90" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+              <rect x="130" y="95" width="55" height="55" fill="none" stroke="white" stroke-width="1" opacity="0.18"/>
+              <polygon points="130,95 157,68 184,95" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+              <rect x="200" y="88" width="50" height="62" fill="none" stroke="white" stroke-width="1" opacity="0.18"/>
+              <polygon points="200,88 225,62 250,88" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-popup">Pop-Up</span><span class="badge badge-free">Free Entry</span></div>
+            <h3 class="deal-card-title">Vintage & Vinyl Market — Dalston</h3>
+            <p class="deal-card-desc">Monthly vintage clothing and vinyl records market in a converted railway arch. Free entry, 60+ stalls, food and live DJs. Saturday only — get there by noon or it gets heaving.</p>
+            <div class="deal-card-footer"><span class="deal-savings">FREE Entry</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Get Details</a></div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-visual" style="background:linear-gradient(135deg,#061614,#0a2220);">
+            <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="150" y="90" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="20" fill="white" opacity="0.1" letter-spacing="3">STREET FOOD</text>
+              <line x1="50" y1="110" x2="250" y2="110" stroke="white" stroke-width="0.8" opacity="0.12"/>
+            </svg>
+          </div>
+          <div class="deal-card-body">
+            <div class="deal-card-tags"><span class="badge badge-popup">Pop-Up</span><span class="badge badge-food">Food</span></div>
+            <h3 class="deal-card-title">Global Street Food Festival — South Bank</h3>
+            <p class="deal-card-desc">Free entry to this month's South Bank street food festival. Over 40 independent food traders from 20 different countries. Dishes from £3. This is what London does best.</p>
+            <div class="deal-card-footer"><span class="deal-savings">Free Entry</span><a href="mailto:Londonforless@hotmail.com" class="btn btn-primary">Find Out More</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Submission CTA ── -->
+  <section style="background:var(--navy-deep);border-top:1px solid rgba(75,163,195,0.12);padding:var(--space-lg) 0;">
+    <div class="container" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;margin-bottom:0.75rem;">
+        <span class="t-label" style="color:var(--gold);">Community</span>
+      </div>
+      <h2 class="t-display fade-up" style="font-size:clamp(2rem,5vw,4rem);color:var(--white);margin-bottom:0.75rem;">Know A Freebie?</h2>
+      <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;max-width:480px;margin:0 auto 1.5rem;font-weight:300;line-height:1.7;">
+        Found something brilliant that the rest of London should know about? Tell us. If it's good enough, we'll share it with 10 million people.
+      </p>
+      <a href="mailto:Londonforless@hotmail.com?subject=Freebie Tip" class="btn btn-ghost" style="font-size:0.85rem;padding:0.85rem 2rem;">
+        Tell Us About It →
+      </a>
+    </div>
+  </section>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <svg class="footer-skyline" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="50" y="20" width="15" height="40" fill="white"/>
+    <line x1="57" y1="20" x2="57" y2="10" stroke="white" stroke-width="2"/>
+    <rect x="100" y="28" width="30" height="32" fill="white"/>
+    <circle cx="420" cy="30" r="22" fill="none" stroke="white" stroke-width="1.8"/>
+    <line x1="420" y1="8" x2="420" y2="52" stroke="white" stroke-width="0.8"/>
+    <line x1="398" y1="30" x2="442" y2="30" stroke="white" stroke-width="0.8"/>
+    <line x1="420" y1="52" x2="420" y2="60" stroke="white" stroke-width="2.5"/>
+    <rect x="280" y="30" width="55" height="30" fill="white"/>
+    <line x1="280" y1="40" x2="335" y2="40" stroke="white" stroke-width="3"/>
+    <line x1="295" y1="30" x2="307" y2="22" stroke="white" stroke-width="1.5"/>
+    <line x1="320" y1="30" x2="307" y2="22" stroke="white" stroke-width="1.5"/>
+    <rect x="760" y="12" width="14" height="48" fill="white"/>
+    <polygon points="757,12 767,0 777,12" fill="white"/>
+    <circle cx="1200" cy="32" r="20" fill="none" stroke="white" stroke-width="1.5"/>
+    <line x1="1200" y1="12" x2="1200" y2="52" stroke="white" stroke-width="0.7"/>
+    <line x1="1180" y1="32" x2="1220" y2="32" stroke="white" stroke-width="0.7"/>
+    <line x1="1200" y1="52" x2="1200" y2="60" stroke="white" stroke-width="2.5"/>
+  </svg>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">London For Less</div>
+          <div class="footer-tagline">Luxe London. Minus the Price Tag.</div>
+          <p class="footer-desc">Because London should be for everyone — not just those who can afford it.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/londonforless" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.tiktok.com/@londonforless" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.91a8.16 8.16 0 004.77 1.52V7.0a4.85 4.85 0 01-1-.31z"/></svg></a>
+            <a href="https://facebook.com/share/1DeWoeQyPM" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="deals.html">Deals & Discounts</a></li>
+            <li><a href="freebies.html">Freebies & Pop-Ups</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Categories</div>
+          <ul class="footer-links">
+            <li><a href="freebies.html">Free Museums</a></li>
+            <li><a href="freebies.html">Free Events</a></li>
+            <li><a href="freebies.html">Free Food</a></li>
+            <li><a href="freebies.html">Pop-Ups</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Get In Touch</div>
+          <div class="footer-contact-item">
+            <span class="t-label" style="font-size:0.6rem;color:var(--blue-light);opacity:0.5;">Email</span>
+            <a href="mailto:Londonforless@hotmail.com">Londonforless@hotmail.com</a>
+          </div>
+          <div style="margin-top:1rem;"><span class="badge badge-bbc">★ As Seen On BBC</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 London For Less. All rights reserved.</p>
+        <p class="footer-copy">Londonforless@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="main.js"></script>
+</body>
+</html>
