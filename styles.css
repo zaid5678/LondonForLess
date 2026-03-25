@@ -927,7 +927,7 @@ ul, ol { list-style: none; }
 /* ─── Instagram / Social Teaser ─── */
 .social-teaser {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4px;
 }
 
@@ -952,6 +952,13 @@ ul, ol { list-style: none; }
   transition: background var(--transition);
 }
 .social-tile:hover::after { background: rgba(13,34,51,0.1); }
+/* Branded social tiles — remove opacity/overlay so brand colours show */
+.social-tile[style*="background:linear-gradient"] svg,
+.social-tile[style*="background:#010101"] svg,
+.social-tile[style*="background:#1877F2"] svg { opacity: 1 !important; width: 52%; height: 52%; }
+.social-tile[style*="background:linear-gradient"]::after,
+.social-tile[style*="background:#010101"]::after,
+.social-tile[style*="background:#1877F2"]::after { display: none; }
 
 /* ─── Media / BBC Block ─── */
 .media-block {
