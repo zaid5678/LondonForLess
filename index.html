@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.PNG" type="image/png" />
 </head>
 <body>
 
@@ -18,46 +19,10 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" aria-label="London For Less home">
-      <svg class="nav-logo-badge" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="#0D2233" stroke="#4BA3C3" stroke-width="2"/>
-        <circle cx="50" cy="50" r="44" fill="none" stroke="#4BA3C3" stroke-width="0.5" stroke-dasharray="3,3"/>
-        <!-- Sky wash -->
-        <rect x="4" y="28" width="92" height="32" fill="#4BA3C3" opacity="0.18" rx="0"/>
-        <!-- Big Ben -->
-        <rect x="14" y="42" width="8" height="20" fill="none" stroke="white" stroke-width="1.2"/>
-        <rect x="15" y="36" width="6" height="7" fill="none" stroke="white" stroke-width="1.2"/>
-        <rect x="16" y="32" width="4" height="5" fill="none" stroke="white" stroke-width="1"/>
-        <line x1="18" y1="32" x2="18" y2="28" stroke="white" stroke-width="1.2"/>
-        <line x1="13" y1="42" x2="23" y2="42" stroke="white" stroke-width="1"/>
-        <!-- Tower Bridge -->
-        <rect x="35" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
-        <rect x="59" y="50" width="6" height="12" fill="none" stroke="white" stroke-width="1.2"/>
-        <line x1="35" y1="55" x2="65" y2="55" stroke="white" stroke-width="1.5"/>
-        <line x1="38" y1="50" x2="38" y2="44" stroke="white" stroke-width="1"/>
-        <line x1="62" y1="50" x2="62" y2="44" stroke="white" stroke-width="1"/>
-        <line x1="38" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
-        <line x1="62" y1="44" x2="50" y2="40" stroke="white" stroke-width="1"/>
-        <line x1="38" y1="44" x2="35" y2="55" stroke="white" stroke-width="0.7" stroke-dasharray="1.5,1.5"/>
-        <line x1="62" y1="44" x2="65" y2="55" stroke="white" stroke-width="0.7" stroke-dasharray="1.5,1.5"/>
-        <!-- London Eye -->
-        <circle cx="83" cy="52" r="9" fill="none" stroke="white" stroke-width="1.2"/>
-        <line x1="83" y1="43" x2="83" y2="61" stroke="white" stroke-width="0.7"/>
-        <line x1="74" y1="52" x2="92" y2="52" stroke="white" stroke-width="0.7"/>
-        <line x1="77" y1="46" x2="89" y2="58" stroke="white" stroke-width="0.6"/>
-        <line x1="89" y1="46" x2="77" y2="58" stroke="white" stroke-width="0.6"/>
-        <line x1="83" y1="61" x2="83" y2="65" stroke="white" stroke-width="1.2"/>
-        <!-- Ground line -->
-        <line x1="4" y1="62" x2="96" y2="62" stroke="white" stroke-width="1" opacity="0.4"/>
-        <!-- Text -->
-        <text x="50" y="74" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="9" fill="white" letter-spacing="2">LONDON</text>
-        <text x="50" y="82" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="7" fill="#C9A84C" letter-spacing="3">FOR LESS</text>
-        <!-- £ accents -->
-        <text x="22" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
-        <text x="73" y="30" font-family="sans-serif" font-size="7" fill="#C9A84C" opacity="0.8">£</text>
-      </svg>
+      <img src="logo.PNG" alt="London For Less" class="nav-logo-badge" style="object-fit:contain;" />
       <div class="nav-logo-text">
         London For Less
-        <span>Est. London · Since 2019</span>
+        <span>Est. London · Since 2025</span>
       </div>
     </a>
 
@@ -106,8 +71,11 @@
   </svg>
 
   <div class="hero-content">
+    <div style="display:flex;gap:2.5rem;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;">
+    <div style="flex:1;min-width:280px;">
     <div style="margin-bottom:1.5rem;display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;" class="fade-up">
       <span class="badge badge-bbc">★ As Seen On BBC</span>
+      <span class="badge" style="background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.3);">✦ As Seen By Simon Squibb</span>
       <span class="t-label" style="color:var(--blue-light);opacity:0.7;">London's #1 Freebies Platform</span>
     </div>
 
@@ -147,6 +115,11 @@
         <div class="t-label" style="color:var(--blue-light);opacity:0.6;margin-top:0.25rem;">Free To Follow</div>
       </div>
     </div>
+    </div><!-- end text column -->
+    <div class="fade-up" style="flex:0 0 auto;display:flex;align-items:center;justify-content:center;padding-top:2rem;">
+      <img src="logo.PNG" alt="London For Less" style="width:clamp(150px,20vw,260px);height:auto;filter:drop-shadow(0 8px 40px rgba(75,163,195,0.3));opacity:0.95;" />
+    </div>
+    </div><!-- end flex wrapper -->
   </div>
 
   <!-- Full-width London skyline SVG -->
@@ -676,9 +649,9 @@
           As Seen On BBC
         </h2>
         <div class="media-block">
-          <div class="media-logo">BBC</div>
+          <img src="BBC-Logo.png" alt="BBC" class="media-logo" style="width:72px;height:auto;object-fit:contain;background:transparent;filter:brightness(0) invert(1);" />
           <div class="media-text">
-            <h3>"The Instagram page every Londoner should follow"</h3>
+            <h3>"The #1 resource for free London experiences"</h3>
             <p>BBC London covered how London For Less has become the go-to destination for anyone who wants to experience the capital without the capital cost.</p>
           </div>
         </div>
@@ -689,6 +662,9 @@
         </div>
         <div style="margin-top:1.5rem;">
           <a href="about.html" class="btn btn-ghost">Our Story →</a>
+        </div>
+        <div style="margin-top:1rem;">
+          <span class="badge" style="background:rgba(201,168,76,0.12);color:var(--gold);border:1px solid rgba(201,168,76,0.25);font-size:0.65rem;letter-spacing:0.1em;">✦ AS SEEN BY SIMON SQUIBB</span>
         </div>
       </div>
 
@@ -757,6 +733,156 @@
           </a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     BLOG / GUIDES
+════════════════════════════════════════ -->
+<section class="section" style="background:var(--navy-deep);border-top:1px solid rgba(75,163,195,0.08);" aria-labelledby="blog-heading">
+  <div class="container">
+    <div class="section-label fade-up">
+      <span class="t-label" style="color:var(--gold);">From The Blog</span>
+    </div>
+    <h2 id="blog-heading" class="t-display fade-up" style="font-size:clamp(2.5rem,6vw,5rem);color:var(--white);margin-bottom:0.5rem;">
+      London Guides & Tips
+    </h2>
+    <p class="fade-up" style="color:var(--blue-light);font-size:0.95rem;margin-bottom:var(--space-md);font-weight:300;">
+      Deep dives, neighbourhood guides, and everything you need to know to live your best London life for less.
+    </p>
+    <div class="rule rule-gold fade-up"></div>
+
+    <div class="card-grid stagger" style="margin-top:var(--space-md);">
+
+      <article class="deal-card" style="cursor:pointer;">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a1628,#0d2233);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="150" cy="90" rx="110" ry="55" fill="#4ba3c3" opacity="0.04"/>
+            <!-- Open book -->
+            <path d="M60,130 L60,60 Q150,45 150,60 L150,130 Z" fill="#0d2233" stroke="#4ba3c3" stroke-width="0.8" opacity="0.6"/>
+            <path d="M240,130 L240,60 Q150,45 150,60 L150,130 Z" fill="#0d2233" stroke="#4ba3c3" stroke-width="0.8" opacity="0.6"/>
+            <line x1="150" y1="60" x2="150" y2="130" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+            <!-- Left page lines -->
+            <line x1="72" y1="80" x2="138" y2="80" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="72" y1="90" x2="138" y2="90" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="72" y1="100" x2="138" y2="100" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="72" y1="110" x2="138" y2="110" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <!-- Right page lines -->
+            <line x1="162" y1="80" x2="228" y2="80" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="162" y1="90" x2="228" y2="90" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="162" y1="100" x2="228" y2="100" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <line x1="162" y1="110" x2="228" y2="110" stroke="white" stroke-width="0.6" opacity="0.25"/>
+            <!-- Map pin on right page -->
+            <circle cx="195" cy="88" r="8" fill="#c9a84c" opacity="0.3"/>
+            <line x1="195" y1="96" x2="195" y2="108" stroke="#c9a84c" stroke-width="1.2" opacity="0.4"/>
+            <!-- £ on left page -->
+            <text x="105" y="95" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="22" fill="#4ba3c3" opacity="0.3">£</text>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-free">Guide</span>
+          </div>
+          <h3 class="deal-card-title">The Ultimate Free London Bucket List 2026</h3>
+          <p class="deal-card-desc">50 things to do in London that cost absolutely nothing. Museums, parks, markets, views and hidden gems — all verified, all free.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Free Read</span>
+            <a href="freebies.html" class="btn btn-primary">Read Guide</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" style="cursor:pointer;">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a1a0c,#0d2010);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Borough Market scene -->
+            <rect x="0" y="140" width="300" height="40" fill="#060f07" opacity="0.9"/>
+            <!-- Iron arch -->
+            <path d="M30,155 L30,65 Q30,40 60,40 Q90,40 90,65" fill="none" stroke="#4ba3c3" stroke-width="1.5" opacity="0.4"/>
+            <path d="M270,155 L270,65 Q270,40 240,40 Q210,40 210,65" fill="none" stroke="#4ba3c3" stroke-width="1.5" opacity="0.4"/>
+            <path d="M90,65 Q150,28 210,65" fill="none" stroke="#4ba3c3" stroke-width="1.5" opacity="0.4"/>
+            <!-- Stalls -->
+            <rect x="40" y="95" width="55" height="45" rx="1" fill="#0d2010" stroke="#4ba3c3" stroke-width="0.6" opacity="0.55"/>
+            <polygon points="35,95 67,80 99,95" fill="#c9a84c" opacity="0.25"/>
+            <rect x="50" y="108" width="10" height="14" rx="1" fill="#4ba3c3" opacity="0.2"/>
+            <rect x="65" y="108" width="10" height="14" rx="1" fill="#c9a84c" opacity="0.2"/>
+            <rect x="130" y="90" width="65" height="50" rx="1" fill="#0d2010" stroke="#4ba3c3" stroke-width="0.6" opacity="0.55"/>
+            <polygon points="125,90 162,73 199,90" fill="#c9a84c" opacity="0.25"/>
+            <rect x="140" y="103" width="10" height="14" rx="1" fill="#c9a84c" opacity="0.2"/>
+            <rect x="156" y="103" width="10" height="14" rx="1" fill="#4ba3c3" opacity="0.2"/>
+            <!-- String lights -->
+            <path d="M30,38 Q150,28 270,38" fill="none" stroke="white" stroke-width="0.4" opacity="0.12"/>
+            <circle cx="80" cy="33" r="2.5" fill="#ffd580" opacity="0.35"/>
+            <circle cx="150" cy="29" r="2.5" fill="#ffd580" opacity="0.35"/>
+            <circle cx="220" cy="33" r="2.5" fill="#ffd580" opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-food">Food</span>
+            <span class="badge badge-popup">Guide</span>
+          </div>
+          <h3 class="deal-card-title">London's Best Street Food Markets Ranked</h3>
+          <p class="deal-card-desc">Borough, Maltby Street, Leather Lane and more. We've eaten at all of them so you know exactly where to go and what to order.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Free Read</span>
+            <a href="deals.html" class="btn btn-primary">Read Guide</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="deal-card" style="cursor:pointer;">
+        <div class="deal-card-visual" style="background:linear-gradient(135deg,#0a0614,#120a1e);">
+          <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Night map of London -->
+            <ellipse cx="150" cy="90" rx="110" ry="60" fill="#4ba3c3" opacity="0.03"/>
+            <!-- Thames river path -->
+            <path d="M20,110 Q60,95 100,105 Q140,115 180,100 Q220,88 280,98" fill="none" stroke="#4ba3c3" stroke-width="4" opacity="0.25"/>
+            <!-- Map location pins -->
+            <circle cx="90" cy="85" r="6" fill="#c9a84c" opacity="0.45"/>
+            <line x1="90" y1="91" x2="90" y2="103" stroke="#c9a84c" stroke-width="1.2" opacity="0.4"/>
+            <circle cx="150" cy="70" r="6" fill="#c9a84c" opacity="0.45"/>
+            <line x1="150" y1="76" x2="150" y2="88" stroke="#c9a84c" stroke-width="1.2" opacity="0.4"/>
+            <circle cx="200" cy="88" r="6" fill="#4ba3c3" opacity="0.5"/>
+            <line x1="200" y1="94" x2="200" y2="108" stroke="#4ba3c3" stroke-width="1.2" opacity="0.4"/>
+            <circle cx="130" cy="118" r="6" fill="#c9a84c" opacity="0.35"/>
+            <line x1="130" y1="124" x2="130" y2="136" stroke="#c9a84c" stroke-width="1.2" opacity="0.3"/>
+            <!-- Map grid lines -->
+            <line x1="0" y1="60" x2="300" y2="60" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="0" y1="90" x2="300" y2="90" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="0" y1="120" x2="300" y2="120" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="60" y1="0" x2="60" y2="180" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="120" y1="0" x2="120" y2="180" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="180" y1="0" x2="180" y2="180" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <line x1="240" y1="0" x2="240" y2="180" stroke="white" stroke-width="0.3" opacity="0.08"/>
+            <!-- Compass rose -->
+            <circle cx="255" cy="48" r="14" fill="none" stroke="#4ba3c3" stroke-width="0.7" opacity="0.3"/>
+            <line x1="255" y1="34" x2="255" y2="62" stroke="white" stroke-width="0.8" opacity="0.3"/>
+            <line x1="241" y1="48" x2="269" y2="48" stroke="white" stroke-width="0.8" opacity="0.3"/>
+            <polygon points="255,34 252,42 258,42" fill="#c9a84c" opacity="0.45"/>
+          </svg>
+        </div>
+        <div class="deal-card-body">
+          <div class="deal-card-tags">
+            <span class="badge badge-popup">Guide</span>
+          </div>
+          <h3 class="deal-card-title">Hidden London: 20 Places Most Tourists Miss</h3>
+          <p class="deal-card-desc">The real London that doesn't show up in guidebooks. Secret gardens, free views, brilliant backstreets and neighbourhood spots worth the detour.</p>
+          <div class="deal-card-footer">
+            <span class="deal-savings">Free Read</span>
+            <a href="about.html" class="btn btn-primary">Read Guide</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="fade-up" style="text-align:center;margin-top:var(--space-md);">
+      <a href="about.html" class="btn btn-outline" style="padding:0.85rem 2.5rem;font-size:0.8rem;">
+        More Guides & Tips →
+      </a>
     </div>
   </div>
 </section>
@@ -888,25 +1014,12 @@
           </ul>
         </div>
 
-        <!-- Categories -->
-        <div>
-          <div class="footer-col-title">Categories</div>
-          <ul class="footer-links">
-            <li><a href="freebies.html">Free Events</a></li>
-            <li><a href="deals.html">Food Deals</a></li>
-            <li><a href="freebies.html">Pop-Ups</a></li>
-            <li><a href="deals.html">Drinks</a></li>
-            <li><a href="deals.html">Entertainment</a></li>
-            <li><a href="deals.html">Shopping</a></li>
-          </ul>
-        </div>
-
         <!-- Contact -->
         <div>
           <div class="footer-col-title">Get In Touch</div>
           <div class="footer-contact-item">
             <span class="t-label" style="font-size:0.6rem;color:var(--blue-light);opacity:0.5;">Email</span>
-            <a href="mailto:Londonforless@hotmail.com">Londonforless@hotmail.com</a>
+            <a href="mailto:londonforless@hotmail.com">londonforless@hotmail.com</a>
           </div>
           <div class="footer-contact-item">
             <span class="t-label" style="font-size:0.6rem;color:var(--blue-light);opacity:0.5;">Instagram</span>
@@ -923,8 +1036,8 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copy">© 2024 London For Less. All rights reserved.</p>
-        <p class="footer-copy">Made with love for London. Londonforless@hotmail.com</p>
+        <p class="footer-copy">© 2026 London For Less. All rights reserved.</p>
+        <p class="footer-copy">Made with love for London. londonforless@hotmail.com</p>
       </div>
     </div>
   </div>
