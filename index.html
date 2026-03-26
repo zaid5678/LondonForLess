@@ -9,45 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="icon" href="logo-hd.png" type="image/png" />
 </head>
 <body>
 
-<!-- LIVE TICKER -->
-<div class="ticker-bar" role="marquee" aria-label="Live deals">
-  <div class="ticker-live">
-    <div class="ticker-live-dot"></div>
-    LIVE
-  </div>
-  <div class="ticker-track">
-    <div class="ticker-inner">
-      <span>🎟 Free entry: Tate Modern — today only</span>
-      <span>·</span>
-      <span>🍽 50% off at Dishoom with code LFL50</span>
-      <span>·</span>
-      <span>🎉 Free pop-up: Covent Garden this Sat &amp; Sun</span>
-      <span>·</span>
-      <span>📍 New deal: Rooftop cinema £5 entry</span>
-      <span>·</span>
-      <span>🆓 Free yoga: Hyde Park every Saturday 9am</span>
-      <span>·</span>
-      <span>🎭 Free comedy night: Soho every Thursday</span>
-      <span>·</span>
-      <span>🎟 Free entry: Tate Modern — today only</span>
-      <span>·</span>
-      <span>🍽 50% off at Dishoom with code LFL50</span>
-      <span>·</span>
-      <span>🎉 Free pop-up: Covent Garden this Sat &amp; Sun</span>
-      <span>·</span>
-      <span>📍 New deal: Rooftop cinema £5 entry</span>
-      <span>·</span>
-      <span>🆓 Free yoga: Hyde Park every Saturday 9am</span>
-      <span>·</span>
-      <span>🎭 Free comedy night: Soho every Thursday</span>
-    </div>
-  </div>
-</div>
 
 <!-- ═══════════════════════════════════════
      NAVIGATION
@@ -87,19 +52,6 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- CATEGORY STRIP -->
-<div class="category-strip" role="navigation" aria-label="Content categories">
-  <div class="category-strip-inner">
-    <button class="cat-tab active" data-cat="all">All</button>
-    <button class="cat-tab" data-cat="things-to-do">🎟 Things To Do</button>
-    <button class="cat-tab" data-cat="food">🍽 Food &amp; Drink</button>
-    <button class="cat-tab" data-cat="pop-up">🎉 Pop-Ups</button>
-    <button class="cat-tab" data-cat="freebies">🆓 Freebies</button>
-    <button class="cat-tab" data-cat="deals">🛍 Deals</button>
-    <button class="cat-tab" data-cat="entertainment">🎭 Entertainment</button>
-    <button class="cat-tab" data-cat="cafes">☕ Cafés</button>
-  </div>
-</div>
 
 <!-- ═══════════════════════════════════════
      HERO
@@ -118,28 +70,27 @@
     <line x1="190" y1="10" x2="10" y2="190" stroke="#4BA3C3" stroke-width="0.5"/>
   </svg>
 
-  <div class="hero-content">
-    <div class="hero-flex-main" style="display:flex;gap:2.5rem;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;">
-    <div class="hero-text-col" style="flex:1;min-width:280px;">
-    <div style="margin-bottom:1.5rem;display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;" class="fade-up">
-      <span class="badge badge-bbc">★ As Seen On BBC</span>
-      <span class="badge" style="background:var(--sky-pale);color:var(--navy);border:1px solid var(--mid);">✦ As Seen By Simon Squibb</span>
-      <span class="t-label" style="color:var(--muted);">London's #1 Freebies Platform</span>
+  <div class="hero-content" style="text-align:center;">
+    <!-- Logo — centre stage -->
+    <div class="fade-up" style="display:flex;justify-content:center;margin-bottom:2rem;">
+      <img src="logo-hd.png" alt="London For Less" style="width:clamp(180px,35vw,420px);height:auto;filter:drop-shadow(0 8px 40px rgba(75,163,195,0.25));" />
     </div>
 
-    <h1 class="t-display fade-up" style="font-size:clamp(3.5rem,10vw,9rem);color:var(--navy);line-height:0.92;margin-bottom:1.25rem;max-width:900px;">
-      London Luxe.<br/>
-      <span style="color:var(--sky);">Minus The</span><br/>
-      Price Tag.
+    <h1 class="t-display fade-up" style="font-size:clamp(2.8rem,7vw,6rem);color:var(--navy);line-height:1;margin-bottom:1rem;">
+      London For Less
     </h1>
 
-    <p class="fade-up" style="font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:520px;margin-bottom:2rem;font-weight:300;line-height:1.7;">
+    <p class="fade-up" style="font-size:clamp(1rem,2vw,1.15rem);color:var(--muted);max-width:480px;margin:0 auto 2rem;font-weight:300;line-height:1.7;">
       Proper deals, hidden pop-ups, and free experiences that most Londoners never find out about. We sort it so you don't have to.
     </p>
 
+    <div class="fade-up" style="display:flex;gap:0.75rem;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem;">
+      <span class="badge badge-bbc">★ As Seen On BBC</span>
+      <span class="badge" style="background:var(--sky-pale);color:var(--navy);border:1px solid var(--mid);">✦ As Seen By Simon Squibb</span>
+    </div>
 
     <!-- Stats inline -->
-    <div class="fade-up" style="display:flex;gap:2.5rem;align-items:stretch;flex-wrap:wrap;">
+    <div class="fade-up" style="display:inline-flex;gap:2.5rem;align-items:stretch;flex-wrap:wrap;justify-content:center;">
       <div>
         <div class="t-display" style="font-size:2.8rem;color:var(--navy);line-height:1;">10M+</div>
         <div class="t-label" style="color:var(--muted);margin-top:0.25rem;">Monthly Views</div>
@@ -155,11 +106,6 @@
         <div class="t-label" style="color:var(--muted);margin-top:0.25rem;">Free To Follow</div>
       </div>
     </div>
-    </div><!-- end text column -->
-    <div class="fade-up hero-logo-col" style="flex:0 0 auto;display:flex;align-items:center;justify-content:center;padding-top:2rem;">
-      <img src="logo-hd.png" alt="London For Less" style="width:clamp(200px,40vw,540px);height:auto;filter:drop-shadow(0 8px 40px rgba(75,163,195,0.3));opacity:0.95;" />
-    </div>
-    </div><!-- end flex wrapper -->
   </div>
 
   <!-- Full-width London skyline SVG -->
@@ -315,8 +261,8 @@
 ════════════════════════════════════════ -->
 <div class="marquee-wrap" aria-hidden="true">
   <div class="marquee-inner">
-    <span>FREE EVENTS THIS WEEK <em>·</em> LONDON'S BEST DEALS <em>·</em> 10M+ MONTHLY VIEWS <em>·</em> AS SEEN ON BBC <em>·</em> POP-UPS & MORE <em>·</em> LUXE LONDON, MINUS THE PRICE TAG <em>·</em></span>
-    <span>FREE EVENTS THIS WEEK <em>·</em> LONDON'S BEST DEALS <em>·</em> 10M+ MONTHLY VIEWS <em>·</em> AS SEEN ON BBC <em>·</em> POP-UPS & MORE <em>·</em> LUXE LONDON, MINUS THE PRICE TAG <em>·</em></span>
+    <span>FREE EVENTS THIS WEEK <em>·</em> LONDON'S BEST DEALS <em>·</em> 10M+ MONTHLY VIEWS <em>·</em> AS SEEN ON BBC <em>·</em> POP-UPS &amp; MORE <em>·</em> LONDON FOR LESS <em>·</em></span>
+    <span>FREE EVENTS THIS WEEK <em>·</em> LONDON'S BEST DEALS <em>·</em> 10M+ MONTHLY VIEWS <em>·</em> AS SEEN ON BBC <em>·</em> POP-UPS &amp; MORE <em>·</em> LONDON FOR LESS <em>·</em></span>
   </div>
 </div>
 
@@ -695,43 +641,6 @@
 
 
 
-<!-- ═══════════════════════════════════════
-     WHAT'S ON THIS WEEK
-════════════════════════════════════════ -->
-<section class="calendar-section" aria-labelledby="calendar-heading">
-  <div class="container">
-    <div class="section-label fade-up" style="justify-content:center;">
-      <span class="t-label" style="color:var(--sky);">Events</span>
-    </div>
-    <h2 id="calendar-heading" class="t-display fade-up" style="font-size:clamp(2rem,5vw,3.5rem);color:var(--navy);margin-bottom:0.5rem;text-align:center;">
-      What's On This Week
-    </h2>
-    <p id="calendar-caption" class="calendar-caption fade-up" style="text-align:center;"></p>
-    <div id="events-calendar" class="calendar-grid fade-up"></div>
-    <div class="calendar-footer fade-up">
-      <a href="deals.html">View all events →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════
-     DEALS MAP
-════════════════════════════════════════ -->
-<section class="map-section" aria-labelledby="map-heading">
-  <div class="container">
-    <div class="section-label fade-up" style="justify-content:center;">
-      <span class="t-label" style="color:var(--sky);">Near You</span>
-    </div>
-    <h2 id="map-heading" class="t-display fade-up" style="font-size:clamp(2rem,5vw,3.5rem);color:var(--navy);margin-bottom:var(--space-md);text-align:center;">
-      Deals Near You — On The Map
-    </h2>
-    <div id="deals-map"></div>
-    <div class="map-footer">
-      <span id="map-counter">Showing 6 deals near Central London</span>
-    </div>
-  </div>
-</section>
 
 
 <!-- ═══════════════════════════════════════
@@ -871,7 +780,6 @@
 <!-- Back to top -->
 <button class="back-to-top" aria-label="Back to top">↑</button>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
